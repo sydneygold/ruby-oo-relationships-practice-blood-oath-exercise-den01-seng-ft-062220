@@ -2,8 +2,6 @@ require 'bundler/setup'
 Bundler.require
 require_rel '../app'
 
-# require 'pry'
-
 ben = Follower.new "Ben", 19, "Lets get wet"
 jeff = Follower.new "Jeff", 28, "Lets get dry actually"
 keith = Follower.new "Keith", 98, "Im not allowed to be wet"

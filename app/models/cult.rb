@@ -47,5 +47,4 @@ class Cult
             bloodoath.cult == self
         end
     end
-#binding.pry
 end

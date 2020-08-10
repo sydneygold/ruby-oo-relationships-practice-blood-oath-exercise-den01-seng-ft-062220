@@ -39,17 +39,11 @@ class Follower
         end
         bloodoaths.map { |blood_oath| blood_oath.cult.slogans }
     end
+    def average_age
+        total_age = follower.age.reduce(0) do |sum, follower|
+            sum += follower.age
+        end
+        total_age / self.cult_population
+    end
 
-    # def self.all
-    #     @@all
-    # end
-
-    # def average_age
-    #     total_age = follower.age.reduce(0) do |sum, follower|
-    #         sum += follower.age
-    #     end
-    #     total_age / self.cult_population
-    # end
-
-# binding.pry
 end
